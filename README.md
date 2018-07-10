@@ -1,2 +1,1 @@
-# weiboPublish
-PHP  接入微博头条文章
+# 头条文章开放平台接入Demo
