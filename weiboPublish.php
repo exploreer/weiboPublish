@@ -1,6 +1,6 @@
 <?php
 	
-	/**此处用的是TP框架，只列出了几个用到的微博发布相关的方法
+   /**此处用的是TP框架，只列出了几个用到的微博发布相关的方法
      * [页面显示微博回调按钮]
      */
     public function data_html()
@@ -20,10 +20,10 @@
         $this->display();
     }
 	
-	/**
+   /**
      * [微博回调方法callback]
      */
-	public function callback()
+    public function callback()
     {
         import('Vendor.Libweibo.Saetv2');
         $o = new \SaeTOAuthV2( self::WB_AKEY , self::WB_SKEY );
@@ -62,10 +62,10 @@
         } 
     }
 	
-	/**
-     * [发布微博头条文章]
-	 */
-	public function publishWeibo()
+   /**
+    * [发布微博头条文章]
+    */
+    public function publishWeibo()
     {
         import('Vendor.Libweibo.Saetv2');
         if(isset($_POST['contents'])){
