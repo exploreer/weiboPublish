@@ -16,7 +16,7 @@
         if(arr[0]['status'] == '上线'){
            	var data = { id : arr[0]['id'] };
 	        if('{$weiboToken}' == ''){
-				//微博授权后直接发布
+		    //微博授权后直接发布
 	            $("#weiboDialog").dialog({
 	                modal:true,
 	                title:'微博授权',
@@ -32,12 +32,11 @@
 	                },
 	                content: '<iframe frameborder="0" style="width:100%;height:100%;position:absolute;" src="{$code_url}"></iframe>',
 	            });
-
 	            $("#weiboDialog").dialog('open');
 	            return ;
 	        }else{
-				sendData( '__MODULE__/Content/publishWeibo' , data , selectorDataGrid );
-			}
+			sendData( '__MODULE__/Content/publishWeibo' , data , selectorDataGrid );
+		}
         }else{
         	$.messager.show({
                 title:'提示信息',
